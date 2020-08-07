@@ -14,7 +14,7 @@
             if ($pwdCheck = true) {
                 session_start();
                 $_SESSION['logid'] = $results['empid'];
-                if ($empid == 'SCS14032764') {
+                if ($results['userRole'] == 'admin') {
                     header("Location: adminUI.php");
                 }
                 else {
